@@ -1,3 +1,4 @@
+
 let state;
 
 function changeState(state = { count: 0 }, action){
@@ -19,13 +20,3 @@ function render(){
 }
 
 dispatch({ type: '@@INIT' })
-
-function dispatch(action) {
-  state = changeState(state, action);
-  render();
-}
-
-
-
-// call the render function
-render();
